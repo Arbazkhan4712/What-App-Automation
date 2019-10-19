@@ -15,10 +15,9 @@ pip install selenium
 ```
 
 ## Owner:
-
-Arbazkhan4712
+- [Arbazkhan4712](https://github.com/Arbazkhan4712/)
 
 ## Contributor:
 
-gholakemohit
+- [Gholakemohit](https://github.com/gholakemohit)
 
