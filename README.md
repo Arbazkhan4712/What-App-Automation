@@ -22,3 +22,7 @@ Arbazkhan4712
 
 gholakemohit
 
+## for whats_app_ubuntu automation use this link
+
+https://tecadmin.net/setup-selenium-chromedriver-on-ubuntu/
+
