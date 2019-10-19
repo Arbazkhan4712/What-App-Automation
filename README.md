@@ -13,3 +13,16 @@ Selenium
 ```
 pip install selenium
 ```
+
+## Owner:
+
+Arbazkhan4712
+
+## Contributor:
+
+gholakemohit
+
+## for whats_app_ubuntu automation use this link
+
+https://tecadmin.net/setup-selenium-chromedriver-on-ubuntu/
+
