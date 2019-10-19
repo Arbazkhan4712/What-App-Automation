@@ -1,13 +1,22 @@
+#import packages
 from selenium import webdriver
 from time import sleep
 
+#get the driver for individual browser
 driver = webdriver.Chrome('C:/Users/HACKER47/Downloads/chromedriver.exe')
+
+#scan the QR code
 print("Scan the QR code")
 driver.get("https://web.whatsapp.com/")
 
+#send message function
 def Sendmsg():
+
+    #enter name of receiver
     name = input("Enter the name of user or group : ")
+    #enter the message
     msg = input("Enter the message : ")
+    #enter the count
     count = int(input("Enter Number of count : "))
 
     user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
@@ -20,8 +29,11 @@ def Sendmsg():
         button = driver.find_element_by_class_name("_3M-N-")
         button.click()
 
+#send image or video file function
 def sendimgvid():
+    #enter name of receiver
     name = input("Enter the name of user or group : ")
+    #enter file path
     filepath = input("Enter the file path (Image,Video) : ")
 
     user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
@@ -38,6 +50,7 @@ def sendimgvid():
     send_button = driver.find_element_by_xpath('//span[@data-icon="send-light"]')
     send_button.click()
 
+#user input
 print("Press 1 for sending multiple messages \nPress 2 to send an image or video \nPress  to exit")
 n = int(input())
 if (n == 1):
