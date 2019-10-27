@@ -21,3 +21,9 @@ pip install selenium
 
 - [Gholakemohit](https://github.com/gholakemohit)
 
+## License & Copyright
+© [Arbaz Khan](https://arbazkhan4712.github.io/Contact.html)
+
+Licensed under the [MIT License](License)
+
+
