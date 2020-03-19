@@ -18,6 +18,10 @@ Selenium
 pip install selenium
 ```
 
+
+Also Download the Chrome Drivers from here according to your chrome version :- [click here](https://chromedriver.chromium.org/downloads)
+
+
 ## Owner:
 - [Arbazkhan4712](https://github.com/Arbazkhan4712/)
 
