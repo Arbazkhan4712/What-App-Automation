@@ -1,9 +1,8 @@
-#import packages
 from selenium import webdriver
 from time import sleep
 
 #get the driver for individual browser
-driver = webdriver.Chrome('C:/Users/HACKER47/Downloads/chromedriver.exe')
+driver = webdriver.Chrome() # add the path to chrome driver 
 
 #scan the QR code
 print("Scan the QR code")
@@ -22,11 +21,11 @@ def Sendmsg():
     user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
     user.click()
 
-    msg_box = driver.find_element_by_class_name("_3u328")
+    msg_box = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
 
     for i in range(count):
         msg_box.send_keys(msg)
-        button = driver.find_element_by_class_name("_3M-N-")
+        button = driver.find_element_by_xpaths('//*[@id="main"]/footer/div[1]/div[3]')
         button.click()
 
 #send image or video file function
@@ -51,7 +50,7 @@ def sendimgvid():
     send_button.click()
 
 #user input
-print("Press 1 for sending multiple messages \nPress 2 to send an image or video \nPress  to exit")
+print("Press 1 for sending multiple messages \nPress 2 to send an image or video \n Press 3  to exit")
 n = int(input())
 if (n == 1):
     Sendmsg()
@@ -61,4 +60,3 @@ elif(n == 2):
 
 elif(n==3):
     quit()
-
