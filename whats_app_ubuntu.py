@@ -26,7 +26,7 @@ def Sendmsg():
 
     for i in range(count):
         msg_box.send_keys(msg)
-        button = driver.find_element_by_xpaths('//*[@id="main"]/footer/div[1]/div[3]')
+        button = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[3]')
         button.click()
 
 #send image or video file function
